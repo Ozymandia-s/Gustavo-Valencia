@@ -1,0 +1,76 @@
+li select {
+    cursor: pointer;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 30px 10px 10px;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    color: #4a4d57;
+  }
+  
+  
+  li select:focus option {
+    border-radius: 10px !important
+  }
+  
+  li select:hover::after {
+    color: #000;
+  }
+  
+  li select:focus {
+    outline: none;
+  }
+  
+  li select:focus::after {
+    color: #000;
+  }
+  
+  li {
+    display: inline-block;
+    position: relative;
+  }
+  
+  li::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+  }
+  
+  li:hover::before {
+    width: 100%;
+  }
+  
+  li.active::before {
+    width: 100%;
+  }
+  
+  li:last-child::before {
+    width: 0%;
+  }
+
+  li button {
+    background-color: #0066CC;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  li button:hover {
+    background-color: #05519c;
+    cursor: pointer;
+    transform: scale(1.05);
+  }

@@ -1,0 +1,60 @@
+body {
+    background: linear-gradient(to bottom, #f8f8f8 0%, #ececeaad 180%);
+    transition: background 1s ease-in-out;
+    }
+  
+    .dark-mode  {
+      background:linear-gradient(to bottom,#212833 0%, #497196 220%);
+      color: #f7ecec;
+      transition: background 1s ease-in-out;
+      border-radius: 5px;
+    }
+
+    .dark-mode form input[type="text"],
+    select {
+        background-color: #b8b9bd;
+    }
+
+    .dark-mode li select{
+        color:white
+    }
+    .dark-mode li select option {
+        background-color: #1f2329;
+      }
+      
+    .dark-mode li select option{
+        color:#7ea0cc
+    }
+    li select {
+        transition: color 1s ease-in-out;
+      }
+
+    .switch-theme button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+      font-size: 10px;
+    }
+    
+    .switch-theme button i {
+      margin-right: 10px;
+      border-radius: 5px;
+    }
+    
+    .switch-theme button .fa-sun {
+      color: #FFA500;
+      transition: color 0.3s ease;
+    }
+    
+    
+
+
+    .switch-theme button .fa-moon {
+      color: #f8f5f5;
+      transition: color 0.3s ease;
+      
+    }
+  
+    .dark-mode .switch-theme button {
+      border-radius:  5px;
+    }
